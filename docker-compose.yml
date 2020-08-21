@@ -1,0 +1,10 @@
+version: '3'
+services:
+  plumber:
+    container_name: docker-compose-plumber
+    build: .
+    image: docker-compose-plumber
+    volumes:
+      - ./plumber.R:/app/plumber.R
+    ports:
+      - "8000:8000"
